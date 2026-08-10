@@ -3,40 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="Style.css">
+
     <title>Simple Homepage - Alarado</title>
 </head>
+
 <body>
+
     <main>
-        <header>
-            <img src="simple-homepage-master/resources/logo-light.svg" alt="logo">
-            <nav>
-                <a href="#">About Us</a>
-                <p>Product</p>
-                <p>Resource</p>
-                <p>Contact</p>
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="#" class="logo">
+                <img
+                    src="simple-homepage-master/resources/logo-light.svg"
+                    alt="Alarado logo"
+                >
+            </a>
+
+            <!-- Mobile menu checkbox -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="menu-button">
+                ☰
+            </label>
+
+            <nav class="nav">
+
+                <a href="#" class="active">About Us</a>
+                <a href="#">Product</a>
+                <a href="#">Resource</a>
+                <a href="#">Contact</a>
+
+                <!-- CSS-only theme switch -->
+                <input type="checkbox" id="theme-toggle" class="theme-toggle">
+
+                <label for="theme-toggle" class="theme-button">
+                    <span class="sun">☀</span>
+                    <span class="moon">☾</span>
+                </label>
+
             </nav>
+
         </header>
-        <div class="hero">
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <!-- LEFT SIDE -->
             <div class="left-section">
-                <p>SIMPLE WAY TO COMMUNICATE</p>
-                <h1>Actions for Accessibility in Design</h1>
-                <p>The fastest way to build and deploy websites with reusable components.</p>
-                
-                <div class="buttons">
-                    <button>GET STARTED</button>
-                    <a href="#">Get live demo</a>
+
+                <p class="eyebrow">
+                    SIMPLE WAY TO COMMUNICATE
+                </p>
+
+                <h1>
+                    Actions for Accessibility in Design
+                </h1>
+
+                <p class="description">
+                    The fastest way to build and deploy websites with reusable components.
+                </p>
+
+                <div class="actions">
+
+                    <button type="button">
+                        GET STARTED
+                    </button>
+
+                    <a href="#">
+                        Get live demo
+                    </a>
+
                 </div>
 
                 <div class="features">
-                    <p>No credit card required</p>
-                    <p>No software to install</p>
+
+                    <p>
+                        ✓ No credit card required
+                    </p>
+
+                    <p>
+                        ✓ No software to install
+                    </p>
+
                 </div>
+
             </div>
-        </div>
-        <div class="right_section">
-            <img src="simple-homepage-master/resources/hero-image-simple-homepage.png" alt="">
-        </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="right-section">
+
+                <img
+                    src="simple-homepage-master/resources/hero-image-simple-homepage.png"
+                    alt="Illustration representing accessibility in design"
+                >
+
+            </div>
+
+        </section>
+
     </main>
+
 </body>
 </html>
